@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="البريد الوارد (1)" />
+        <item
+            android:title="استفسار صحى" />
+        <item
+            android:id="@+id/my_courses"
+            android:title="ملفى الصحي" />
+        <item
+            android:title="خريطة مزودي الخدمة الطبية" />
+        <item
+            android:title="أرقام هامة" />
+
+    </group>
+
+
+
+</menu>

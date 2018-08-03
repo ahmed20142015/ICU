@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".fragments.NewsAndIntroduction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:weightSum="3"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:text="ملف\nالصحي"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:textStyle="normal"
+                android:background="@drawable/news_bg"
+                android:gravity="center"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="8dp"
+                android:src="#ffff00"
+                />
+
+        </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/course_time_line"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:text="البرايد\nالوارد"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:textStyle="normal"
+                android:background="@drawable/courses_bg"
+                android:gravity="center"
+                />
+
+
+
+        <TextView
+            android:id="@+id/drug_index"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="الأخبار\nو تعليمات"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:textStyle="normal"
+            android:background="@drawable/drug_bg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#7f8fa9"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood group (drop down: A, AB, O)\nReceive blood donation calls (yes – No)\n\nweight  (field for numbers)  Kg\n\nAllergy  (text box)\nspecial diets  (text box)\nSpecial habits  (text box)\nMedical condition: (check list)"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="DM  (insulin / no)\nHTN\nIHD\nAsthma\nEpilepsy\nCancer \nCKD  (dialysis / no)\nOther ( text box)"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:text="Medications\n(text box)  and (browse to upload pictures)\n\nInsurance company  (text box)\nTreating doctor No (text box)\nCaregiver No /relative (text box)\nRecent investigations (text box) and (browse)\nImmunizations (text box)\nMedical devices / interventions eg  catheter – pacemaker – shunt (text box)\nOther health file link (text box)"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/call_icon"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
